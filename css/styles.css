@@ -32,23 +32,6 @@ p {
   background-color: yellow;
 }
 
-.mainpage-top-image {
-  width: 100%;
-
-}
-
-.mainpage-image-container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.top-left {
-position: absolute;
-top: 10%;
-left: 10%;
-}
-
 .mainpage-sub-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -57,10 +40,51 @@ left: 10%;
   background-color: wheat;
 }
 
+.background-image-container-1{
+  background-image: url('../assets/photos/03-day.jpg');
+  background-size: cover;
+  background-color: aqua;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.background-image-container-2{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  background-image: url('../assets/photos/02-day.jpg');
+  background-size: cover;
+  background-color: aqua;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.booking-button{
+
+}
+
+.background-image-container-3{
+  background-image: url('../assets/photos/05-night.jpg');
+  background-size: cover;
+  background-color: aqua;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.top-left {
+position: absolute;
+top: 10%;
+left: 10%;
+}
+
 .text-image-container {
     position: relative;
     text-align: center;
     color: white;
+    padding-top: 4px;
 }
 
 .main-left-center{
@@ -69,35 +93,15 @@ left: 10%;
   left: 15%;
 }
 
-.main-middle-top{
-  position: absolute;
-  top: 10%;
-  left: 33%;
-}
-
-.main-bottom-left-center{
-  position: absolute;
-  top: 40%;
-  left: 25%;
-  color: black;
-}
-
-.main-bottom-center{
-  position: absolute;
-  top: 55%;
-  left: 47%;
-  color: black;
-}
-
 .about-top-left {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 20%;
+  left: 20%;
 }
 
 .about-center-right {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 75%;
 }
 
@@ -107,8 +111,31 @@ left: 10%;
   left: 40%;
 }
 
-footer {
+.booking-container{
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 8px;
+  padding: 8px;
+  background-color: yellow;
+}
+
+.booking-image-container{
+  background-image: url('../assets/photos/04-day.jpg');
+  background-size: cover;
+  background-color: aqua;
+  justify-self: center;
+  text-align: center;
+  padding: 20%;
+  width: 40%;
+}
+
+.test{
   display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: grid;
   justify-content: center;
   color: white;
 background-color: black;
