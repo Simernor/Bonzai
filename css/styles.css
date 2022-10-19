@@ -1,1 +1,116 @@
-p{color: blue;}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: darkgrey;
+  width: 100%;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 8px;
+    padding: 8px;
+    background-color: blue;
+}
+
+.header-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items:center;
+}
+
+.mainpage-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 8px;
+  padding: 8px;
+  background-color: yellow;
+}
+
+.mainpage-top-image {
+  width: 100%;
+
+}
+
+.mainpage-image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+position: absolute;
+top: 10%;
+left: 10%;
+}
+
+.mainpage-sub-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 8px;
+  padding: 8px;
+  background-color: wheat;
+}
+
+.text-image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.main-left-center{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+.main-middle-top{
+  position: absolute;
+  top: 10%;
+  left: 33%;
+}
+
+.main-bottom-left-center{
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  color: black;
+}
+
+.main-bottom-center{
+  position: absolute;
+  top: 55%;
+  left: 47%;
+  color: black;
+}
+
+.about-top-left {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.about-center-right {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+}
+
+.about-top-center{
+  position: absolute;
+  top: 0%;
+  left: 40%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+background-color: black;
+
+}
