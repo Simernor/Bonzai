@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: darkgrey;
+  background-color: white;
   width: 100%;
 }
 
@@ -15,13 +15,22 @@ p {
     grid-template-columns: auto auto auto;
     grid-gap: 8px;
     padding: 8px;
-    background-color: blue;
+    background-color: rgb(52, 52, 52);
+    transition: 1s;
 }
 
 .header-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items:center;
+}
+
+a {
+  color: white;
+  text-decoration:none;  
+}
+
+.gradient-hover:hover{
+  background-image: linear-gradient(to right, green , rgba(0, 128, 0, 0));
 }
 
 .mainpage-container {
@@ -29,7 +38,6 @@ p {
   grid-template-rows: auto auto;
   grid-gap: 8px;
   padding: 8px;
-  background-color: yellow;
 }
 
 .mainpage-sub-container {
@@ -37,13 +45,11 @@ p {
   grid-template-columns: auto auto auto;
   grid-gap: 8px;
   padding: 8px;
-  background-color: wheat;
 }
 
 .background-image-container-1{
   background-image: url('../assets/photos/03-day.jpg');
   background-size: cover;
-  background-color: aqua;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
@@ -55,29 +61,32 @@ p {
   grid-template-rows: auto auto auto;
   background-image: url('../assets/photos/02-day.jpg');
   background-size: cover;
-  background-color: aqua;
   padding-top: 8px;
   padding-left: 8px;
   padding-right: 8px;
 }
 
 .booking-button{
+  opacity: 0.8;
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
 
+.booking-button:hover {
+  background-color: #348e37;
+  color: white;
 }
 
 .background-image-container-3{
   background-image: url('../assets/photos/05-night.jpg');
   background-size: cover;
-  background-color: aqua;
   padding-top: 100px;
   padding-bottom: 100px;
-  text-align: center;
 }
 
-.top-left {
-position: absolute;
-top: 10%;
-left: 10%;
+.background-image-container-3 > p{
+  visibility: hidden;
 }
 
 .text-image-container {
@@ -96,48 +105,85 @@ left: 10%;
 .about-top-left {
   position: absolute;
   top: 20%;
-  left: 20%;
+  left: 15%;
 }
 
 .about-center-right {
   position: absolute;
   top: 50%;
-  left: 75%;
+  left: 65%;
 }
 
 .about-top-center{
   position: absolute;
   top: 0%;
-  left: 40%;
+  left: 12%;
 }
 
 .booking-container{
   display: grid;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-gap: 8px;
   padding: 8px;
-  background-color: yellow;
 }
 
 .booking-image-container{
   background-image: url('../assets/photos/04-day.jpg');
   background-size: cover;
-  background-color: aqua;
+  color: white;
   justify-self: center;
   text-align: center;
-  padding: 20%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  padding-left: 40%;
+  padding-right: 40%;
   width: 40%;
 }
 
-.test{
+.booking-image-container > p{
+  display: flex;
+  font-size: large;
+}
+
+.flex-container{
   display: flex;
   justify-content: center;
 }
 
+.subrow{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 128, 0, 0.574);
+  border-radius: 4px;
+}
+
+.subrow > input {
+  margin: 4px;
+}
+
+.huge-button{
+  height: 10em;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.huge-button:hover{
+  background: #73AD21;
+}
+
+.big-input-field{
+  text-align: center;
+  height: 150px;
+}
+
 footer {
+  height: 40px;
   display: grid;
   justify-content: center;
+  align-items: center;
   color: white;
-background-color: black;
+  background-color: black;
 
 }
