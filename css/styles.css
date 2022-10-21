@@ -24,7 +24,7 @@ input{
     grid-template-columns: auto auto auto;
     grid-gap: 8px;
     padding: 8px;
-    background-color: rgb(52, 52, 52);
+    background-color: rgb(64, 64, 64);
     transition: 1s;
 }
 
